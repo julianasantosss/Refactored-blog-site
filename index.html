@@ -155,10 +155,11 @@
 
     <script>
       // Cargar el contenido del Navbar
+
       fetch('./componentes/Nabvar/Navbar.html')
         .then(response => response.text())
         .then(data => {
-          document.getElementById('Nabvar').innerHTML = data;
+          document.getElementById('Navbar').innerHTML = data;
           
           // Enlace para el archivo CSS del footer
           const link = document.createElement('link');
