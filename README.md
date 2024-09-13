@@ -7,3 +7,4 @@
   * John Alexander Forero
   * Diana Rodriguez
   * Mario Acendra
+  * Mayra Santos
