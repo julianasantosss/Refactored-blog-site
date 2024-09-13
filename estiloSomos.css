@@ -27,107 +27,58 @@ body {
     margin: 0;
     padding: 0;
 }
-nav {
-    background-color: midnightblue;
-    color: white;
+
+  .card-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las tarjetas */
 }
- 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
+
+.card {
+    margin: 0 auto; /* Centrar las tarjetas horizontalmente en el contenedor */
 }
- 
-nav .logo i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
-}
- 
-nav ul {
-    list-style: none;
+/* Estilo general para el cuerpo */
+/* Estilo general para el cuerpo */
+body {
     margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Contenedor principal para el layout */
+.container {
     display: flex;
+    justify-content: space-between; /* Espacio entre el main y los aside */
+    padding: 20px;
 }
- 
-nav ul li {
-    margin-left: 20px;
+
+/* Estilo para los asides */
+aside {
+    flex: 1; /* Permite que los asides se ajusten al contenido */
+    margin: 0 10px; /* Espacio entre los asides y el main */
 }
- 
-nav ul li a {
+
+/* Estilo para el main */
+main {
+    flex: 2; /* Permite que el main ocupe más espacio que los asides */
+    color: white; /* Color del texto en el main */
+    padding: 20px;
+    border-radius: 8px; /* Bordes redondeados para el main */
+}
+
+/* Tarjetas dentro de los asides */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+.card {
     color: white;
-    text-decoration: none;
+    width: 100%; /* Ancho completo del contenedor de la tarjeta */
+    margin: 0 auto; /* Centra las tarjetas horizontalmente */
+    background-color: mediumvioletred; /* Color de fondo de las tarjetas */
+    border: 1px solid mediumvioletred; /* Borde opcional para las tarjetas */
+    border-radius: 8px; /* Bordes redondeados para las tarjetas */
+    overflow: hidden; /* Para asegurar que las esquinas redondeadas no se rompan */
     padding: 10px;
-    transition: background 0.3s;
 }
- 
-nav ul li a:hover {
-    background-color: mediumvioletred;
-    border-radius: 5px;
-}
- 
-nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    color: white;
-}
- 
-nav .logo i {
-    font-size: 28px;
-    color: #ffcc00;  
-    margin-right: 10px;
-    transition: transform 0.3s, color 0.3s;
-}
- 
-nav .logo span {
-    font-size: 20px;
-    letter-spacing: 1px;
-    color: white;
-}
- 
-nav .logo:hover i {
-    transform: rotate(360deg);
-    color: #ff6600;
-}
- 
- /*FOOTER*/
-
- footer {
-    background-color: rgba(25, 25, 112); /* Color de fondo del pie de página */
-    color: #fff; /* Color del texto */
-    padding: 20px 0; /* Espaciado alrededor del contenido */
-    text-align: center; /* Centrar el texto */
-    font-size: 15px;
-    
-  }
-  .autores{
-    text-align: center; 
-    list-style-type: none;
-  }
-  
-  .titulos_footer{
-    text-align: center; 
-    font-size: 17px;
-    margin-left: 2%;
-  }
-  
-  .social-media a {
-    margin: 0 10px;
-  }
-  
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-  
-  .social-icon:hover {
-    transform: scale(1.1);
-  }
-
-
