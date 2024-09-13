@@ -15,7 +15,7 @@ nav .container-fluid{
     background-color: transparent;
   }
   
-  .btn-outline-success:hover {
+.btn-outline-success:hover {
     color: white !important;
     background-color: mediumvioletred !important;
   }
