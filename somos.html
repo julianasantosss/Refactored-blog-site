@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="estiloSomos.css" />
   </head>
   <body>
-    <header></header>
+    <header><div id="Navbar"></div></header>
     <div class="container">
       <aside>
         <div class="card-container">
           <div class="card" style="width: 18rem">
             <img
-              src="./Pic/zelda.png"  width="270px" height="100px"
+              src="./Pic/zelda.png"
+              width="270px"
+              height="100px"
               class="card-img-top"
               alt="The Legend of Zelda: Breath of the Wild"
             />
@@ -30,7 +32,9 @@
           </div>
           <div class="card" style="width: 18rem">
             <img
-              src="./Pic/thewitcher.png" width="270px" height="100px"
+              src="./Pic/thewitcher.png"
+              width="270px"
+              height="100px"
               class="card-img-top"
               alt="The Witcher 3: Wild Hunt"
             />
@@ -44,9 +48,7 @@
             </div>
           </div>
           <div class="card" style="width: 18rem">
-            <img src="./Pic/red-redem.png" width="270px" height="100px"
-            class="card-img-top" 
-            alt="Red Dead Redemption 2" />
+            <img src="..." class="card-img-top" alt="Red Dead Redemption 2" />
             <div class="card-body">
               <h5 class="card-title">Red Dead Redemption 2</h5>
               <p class="card-text">
@@ -95,7 +97,9 @@
         <div class="card-container">
           <div class="card" style="width: 18rem">
             <img
-              src="./Pic/zelda.png" width="270px" height="100px"
+              src="./Pic/zelda.png"
+              width="270px"
+              height="100px"
               class="card-img-top"
               alt="The Legend of Zelda: Breath of the Wild"
             />
@@ -112,7 +116,9 @@
           </div>
           <div class="card" style="width: 18rem">
             <img
-              src="./Pic/thewitcher.png"  width="270px" height="100px"
+              src="./Pic/thewitcher.png"
+              width="270px"
+              height="100px"
               class="card-img-top"
               alt="The Witcher 3: Wild Hunt"
             />
@@ -125,10 +131,14 @@
               <a href="#" class="btn btn-primary">Leer más</a>
             </div>
           </div>
-          <div class="card" style="width: 18rem"> 
-            <img src="./Pic/red-redem.png" width="270px" height="100px"
-            class="card-img-top" 
-            alt="Red Dead Redemption 2" />
+          <div class="card" style="width: 18rem">
+            <img
+              src="./Pic/red-redem.png"
+              width="270px"
+              height="100px"
+              class="card-img-top"
+              alt="Red Dead Redemption 2"
+            />
             <div class="card-body">
               <h5 class="card-title">Red Dead Redemption 2</h5>
               <p class="card-text">
@@ -141,5 +151,20 @@
         </div>
       </aside>
     </div>
+    <script>
+      // Cargar el contenido del nav
+      fetch("./componentes/Navbar/Navbar.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("Navbar").innerHTML = data;
+
+          // Enlace para el archivo CSS del footer
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = "./componentes/Navbar/Navbar.css";
+          document.head.appendChild(link);
+        })
+        .catch((error) => console.error("Error al cargar el footer:", error));
+    </script>
   </body>
 </html>
