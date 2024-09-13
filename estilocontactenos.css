@@ -4,7 +4,7 @@ html{
     background-size: 100% ;
 }
 
-.container-fluid{
+main .container-fluid{
     width: 100%;
     padding: 100px;
     background-image: url('./Pic/fondoGamer.jpg');
@@ -13,4 +13,69 @@ html{
 }
 
 
+footer {
+  background-color: rgb(25, 25, 112); /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto */
+  padding: 20px 0; /* Espaciado alrededor del contenido */
+  text-align: center; /* Centrar el texto */
+  font-size: 15px;
+  
+}
+.autores{
+  text-align: center; 
+  list-style-type: none;
+}
+
+.titulos_footer{
+  text-align: center; 
+  font-size: 17px;
+  margin-left: 2%;
+}
+
+.social-media a {
+  margin: 0 10px;
+  margin-left: 2%;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10%;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+nav .container-fluid{
+  background-color: midnightblue;
+  padding: 10px;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+  margin: 0px !important;
+  padding: 0px !important;;
+}
+.navbar-brand{
+  color:white !important;
+}
+.btn-outline-success {
+  color: white  !important;
+  border: 1px solid white !important;
+  background-color: transparent;
+}
+
+.btn-outline-success:hover {
+  color: white !important;
+  background-color: mediumvioletred !important;
+}
+.nav-link{
+  color: white !important;
+  margin: 5px;
+  border: 1px solid white !important;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+.nav-link:hover{
+  background-color: mediumvioletred !important;
+}
 
