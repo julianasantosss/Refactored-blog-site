@@ -21,8 +21,8 @@
       <img id="banner-img" src="./Pic/bannerGamer.jpg" alt="Banner gamer">
     </div>
     
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container-fluid" style="color: #070220;">
+      <div class="row" style="color: #070220;">
       <!-- ads -->
         <div class="col-3 bg-transparent p-2">
           <h4 style="color: white; text-shadow: mediumvioletred 1px 0 10px;">Ads</h4>        
@@ -136,6 +136,8 @@
   <div>   
     <div id="footer"></div> 
   </div>
+
+
   <script>
     // Cargar el contenido del footer
     fetch('./componentes/Footer/footer.html')
@@ -154,14 +156,14 @@
 
 
     <script>
-      //Cargar el contenido del Navbar
+     // Cargar el contenido del Navbar
 
       fetch('./componentes/Nabvar/Navbar.html')
         .then(response => response.text())
         .then(data => {
           document.getElementById('Navbar').innerHTML = data;
           
-          // Enlace para el archivo CSS del footer
+          //Enlace para el archivo CSS del footer
           const link = document.createElement('link');
           link.rel = 'stylesheet';
           link.href = './componentes/Navbar/Navbar.css';  
