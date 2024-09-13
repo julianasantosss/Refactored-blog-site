@@ -1,0 +1,31 @@
+.container-fluid{
+    background-color: midnightblue;
+    padding: 10px;
+}
+.navbar navbar-expand-lg bg-body-tertiary{
+    margin: 0px !important;
+    padding: 0px !important;;
+}
+.navbar-brand{
+    color:white !important;
+}
+.btn-outline-success {
+    color: white  !important;
+    border: 1px solid white !important;
+    background-color: transparent;
+  }
+  
+  .btn-outline-success:hover {
+    color: white !important;
+    background-color: mediumvioletred !important;
+  }
+.nav-link{
+    color: white !important;
+    margin: 5px;
+    border: 1px solid white !important;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.nav-link:hover{
+    background-color: mediumvioletred !important;
+}
