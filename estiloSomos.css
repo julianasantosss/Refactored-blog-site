@@ -75,7 +75,7 @@ main {
     gap: 20px; /* Espacio entre las tarjetas */
 }
 
-.card {
+.card-container .card{
     color: white;
     width: 100%; /* Ancho completo del contenedor de la tarjeta */
     margin: 0 auto; /* Centra las tarjetas horizontalmente */

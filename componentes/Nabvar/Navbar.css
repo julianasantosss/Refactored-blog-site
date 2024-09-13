@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 nav .container-fluid{
     background-color: midnightblue;
     padding: 10px;
